@@ -26,6 +26,7 @@
 - [Installation](#installation) 
 - [Live Site](#live-site)
 - [Resources](#resources)
+- [Copyright](#copyright)
 - [Let's Connect!](#lets-connect) 
 
 #
@@ -34,7 +35,10 @@
 
 <a href=#100days>![#100DaysOfCode](Assets/inter-100hash.png)</a>  
 
-<a href=#100days>![Under Construction](Assets/lorem-text.png)</a>
+### Day 9: February 12, 2021
+- Our <a href="https://flatironschool.com/">Flatiron School</a> cohort (**The Code Benders!**) loved playing the game <a href="https://innersloth.com/gameAmongUs.php">Among Us</a>.
+
+- For Day 9, I applied an <a href="https://innersloth.com/gameAmongUs.php">Among Us</a> theme to a vertical card carousel of characters from the game.
 
 #
 
@@ -57,7 +61,7 @@ open index.html
 
 <a href="https://emjose.github.io/vertical-cards/">![Live Site](Assets/inter-live-site.png)</a>  
 
-<a href="https://emjose.github.io/vertical-cards/">![Under Construction](Assets/lorem-live.png)</a>
+<a href="https://emjose.github.io/vertical-cards/">![Live Site](Assets/009-among-us.gif)</a>
 
 #
 
@@ -65,7 +69,23 @@ open index.html
 
 <a href=#resources>![Demos](Assets/inter-resources.png)</a>  
 
-<a href=#resources>![under construction](Assets/lorem-text.png)</a>
+- #### [Google Fonts](https://fonts.google.com/)
+
+- #### [Unsplash Stock Photos](https://unsplash.com/)
+
+- #### [Among Us by Innersloth](https://innersloth.com/gameAmongUs.php)
+
+- #### [Vertical Cards Tutorial](https://youtu.be/Gd7T5_3tjYQ) by [CodingNepal](https://www.youtube.com/channel/UCk7xIEmd3MeyhIu2StLX5yA)
+
+#
+
+<p id="copyright"><p>
+
+<a href=#copyright>![Copyright](Assets/inter-copyright.png)</a>
+
+- This project is for made for educational purposes only. 
+  
+- All <a href="https://innersloth.com/gameAmongUs.php">Among Us</a> images and characters are copyright of <a href="https://innersloth.com/">Innersloth</a>. © Innersloth LLC. All Rights Reserved.
 
 #
 
