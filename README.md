@@ -29,6 +29,8 @@
 -   [Copyright](#copyright)
 -   [Let's Connect!](#lets-connect)
 
+<br>
+
 #
 
 <p id="100days"><p>
@@ -40,6 +42,8 @@
 -   Our <a href="https://flatironschool.com/">Flatiron School</a> cohort (**The Code Benders!**) loved playing the game <a href="https://innersloth.com/gameAmongUs.php">Among Us</a>.
 
 -   For Day 9, I applied an <a href="https://innersloth.com/gameAmongUs.php">Among Us</a> theme to a vertical card carousel of characters from the game.
+
+<br>
 
 #
 
@@ -59,6 +63,8 @@ git clone git@github.com:emjose/vertical-cards.git && cd vertical-cards
 open index.html
 ```
 
+<br>
+
 #
 
 <p id="live-site"><p>
@@ -66,6 +72,12 @@ open index.html
 <a href="https://emjose.github.io/vertical-cards/">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
 <a href="https://emjose.github.io/vertical-cards/">![Live Site](Assets/009-among-us.gif)</a>
+
+• **[Vertical Cards](https://emjose.github.io/vertical-cards/)** is responsive and keyboard-navigable.
+
+• **[Vertical Cards](https://emjose.github.io/vertical-cards/)** is a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps).
+
+<br>
 
 #
 
@@ -82,6 +94,8 @@ open index.html
 -   #### [Vertical Cards Tutorial](https://youtu.be/Gd7T5_3tjYQ) by [CodingNepal](https://www.youtube.com/channel/UCk7xIEmd3MeyhIu2StLX5yA)
 
 -   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
+
+<br>
 
 #
 
