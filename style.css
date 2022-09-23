@@ -2,120 +2,245 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+:root {
+	--black: #000;
+	--white: #fff;
+	--github-fill: var(--white);
+	--github-color: var(--black);
+	--github-focus: rgb(255, 128, 0);
+	--poppins: "Poppins", sans-serif;
+	--amatic: "Amatic SC", cursive;
+	--outline-1: 4px solid red;
+	--outline-2: 3px solid red;
+	--card-radius: 100px 100px 100px 100px;
+	--card-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+	--image-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	--button-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7);
+	--gradient-red: linear-gradient(to bottom, #000000 0%, #ff0000 100%);
+	--gradient-purple: linear-gradient(to bottom, #000000 0%, #a628d8 100%);
+	--space-image: url("https://images.unsplash.com/photo-1467685790346-20bfe73a81f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80")
+		no-repeat center center/cover;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--poppins);
+}
+
 body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url("https://images.unsplash.com/photo-1467685790346-20bfe73a81f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80")
-    no-repeat center center/cover;
+	background-color: var(--black);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--space-image);
+}
+
+.title {
+	font-size: 7vw;
+	z-index: 10;
+	font-family: var(--amatic);
+	color: var(--white);
+	position: absolute;
+	top: 50px;
 }
 
 .wrapper .outer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
 .wrapper .card {
-  background: #fff;
-  width: 500px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  justify-content: space-between;
-  border-radius: 100px 100px 100px 100px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  animation: animate 10s linear infinite;
-  animation-delay: calc(2s * var(--delay));
+	background: var(--white);
+	width: 500px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	justify-content: space-between;
+	border-radius: var(--card-radius);
+	box-shadow: var(--card-shadow);
+	animation: animate 10s linear infinite;
+	animation-delay: calc(2s * var(--delay));
 }
+
 .outer:hover .card {
-  animation-play-state: paused;
+	animation-play-state: paused;
 }
+
 .wrapper .card:last-child {
-  animation-delay: calc(-2s * var(--delay));
+	animation-delay: calc(-2s * var(--delay));
 }
+
 @keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translateY(100%) scale(0.5);
-  }
-  5%,
-  20% {
-    opacity: 0.4;
-    transform: translateY(100%) scale(0.7);
-  }
-  25%,
-  40% {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0%) scale(1);
-  }
-  45%,
-  60% {
-    opacity: 0.4;
-    transform: translateY(-100%) scale(0.7);
-  }
-  65%,
-  100% {
-    opacity: 0;
-    transform: translateY(-100%) scale(0.5);
-  }
+	0% {
+		opacity: 0;
+		transform: translateY(100%) scale(0.5);
+	}
+	5%,
+	20% {
+		opacity: 0.4;
+		transform: translateY(100%) scale(0.7);
+	}
+	25%,
+	40% {
+		opacity: 1;
+		pointer-events: auto;
+		transform: translateY(0%) scale(1);
+	}
+	45%,
+	60% {
+		opacity: 0.4;
+		transform: translateY(-100%) scale(0.7);
+	}
+	65%,
+	100% {
+		opacity: 0;
+		transform: translateY(-100%) scale(0.5);
+	}
 }
+
 .card .content {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .wrapper .card .img {
-  height: 120px;
-  width: 120px;
-  position: absolute;
-  left: 15px;
-  background: #fff;
-  border-radius: 50%;
-  padding: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	left: 15px;
+	background: var(--white);
+	border-radius: 50%;
+	padding: 5px;
+	box-shadow: var(--image-shadow);
 }
+
 .card .img img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	object-fit: cover;
 }
+
 .card .details {
-  margin-left: 130px;
+	margin-left: 130px;
 }
+
 .details span {
-  font-weight: 700;
-  font-size: 20px;
+	font-weight: 700;
+	font-size: 20px;
 }
+
 .card a {
-  text-decoration: none;
-  padding: 25px 15px;
-  border-radius: 50%;
-  color: #fff;
-  font-weight: 700;
-  background: linear-gradient(to bottom, #000000 0%, #a628d8 100%);
-  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7);
-  transition: all 0.1s ease;
+	text-decoration: none;
+	padding: 25px 15px;
+	border-radius: 50%;
+	color: var(--white);
+	font-weight: 700;
+	background: var(--gradient-purple);
+	box-shadow: var(--button-shadow);
+	transition: all 0.1s ease;
 }
+
+.card a:focus-within,
 .card a:hover {
-  transform: scale(0.92);
+	transform: scale(1.1);
+	background: var(--gradient-red);
 }
-.title {
-  z-index: 2;
-  font-family: "Amatic SC", cursive;
-  color: white;
-  position: absolute;
-  top: 50px;
+
+.card a:focus {
+	outline: var(--outline-1);
+	outline-offset: 4px;
+	box-shadow: none;
+}
+
+.github-corner:focus svg path {
+	fill: var(--github-focus);
+}
+
+.github-corner:focus .octo-arm,
+.github-corner:focus .octo-body {
+	fill: var(--github-color);
+}
+
+.github-corner:focus .octo-arm,
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner {
+		display: none;
+	}
+
+	.title {
+		font-size: 12vw;
+	}
+
+	.wrapper .card {
+		width: 300px;
+		height: 120px;
+		padding-left: 4px;
+	}
+
+	.card .content {
+		width: 210px;
+	}
+
+	.wrapper .card .img {
+		height: 100px;
+		width: 100px;
+		left: 10px;
+	}
+
+	.card .details {
+		margin-left: 116px;
+	}
+
+	.details span {
+		font-size: 16px;
+	}
+
+	.details p {
+		font-size: 12px;
+	}
+
+	.card a {
+		padding: 15px 5px;
+		font-size: 15px;
+	}
+
+	.card a:hover {
+		transform: scale(1);
+	}
+
+	.card a:focus {
+		outline: var(--outline-2);
+		outline-offset: 3px;
+	}
 }
